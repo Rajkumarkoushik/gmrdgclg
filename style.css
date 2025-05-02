@@ -1,0 +1,120 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap');
+
+/* h1{
+    color: orange;
+}
+h2{
+    background-color: green;
+}
+h3{
+    font-size: 100px;
+}
+h4{
+    text-align: center;
+}
+h5{
+    text-transform: uppercase;
+}
+h6{
+    text-shadow: 3px 3px 0px red;
+}
+
+@media(max-width: 1023px){
+    h1{
+        color: yellow;
+    }
+}
+
+@media(max-width: 767px){
+    h1{
+        color: green;
+    }
+}
+ */
+
+ /* Css Selectors 1. simple, 2. combinator , 3. pseudo class, 4. pseudo element, 5. attribute selectors */
+
+ /* Simple selectors Element, .class, #id, universal */
+
+ /* h1, h2, h3, h4, h5, h6, p{
+    color: darkgrey;
+ } */
+/*  
+h1{
+    font-size: 72px;
+    font-weight: 400;
+    text-align: right;
+    color: red;
+    background-color: green;
+    text-transform: capitalize;
+}
+
+p{
+    line-height: 32px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    text-align: justify;
+    background: red;
+    color: yellow;
+    font-size: 23px;
+    font-weight: 900;
+    text-indent: 100px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+} */
+
+/* p{
+    font-family: "Coral Pixels", serif;
+} */
+
+
+/* css Colors HEX hexadecimal, RGB red, green , blue , HSL hue , saturation, lightning  */
+
+/* HEX a to f 0- 255  total 6 values*/
+h1, h2, h3, h4, h5, h6, p, li, a{
+    /* color: #af345d;
+    background-color: #ac56cd; */
+    font-family: "Playwrite RO", cursive;
+}
+
+/* RGB  0-255*/
+h1{
+    color: rgb(25, 55, 255);
+    background-color: rgb(0, 36, 89);
+
+}
+
+/* HSL   0 to 360deg, 0 to 100%, 0 to 100%*/
+
+h1{
+    color: hsl(60deg, 60%, 80%);
+    background-color: hsl(180deg, 34%, 12%);
+}
+
+
+p{
+    background-image: url("./assets/images/homepage-images/bestseller-1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+ul{
+    background-image: url("./assets/images/homepage-images/bestseller-3.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* Box model, css positions */
