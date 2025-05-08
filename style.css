@@ -83,21 +83,21 @@ li{
 /* css Colors HEX hexadecimal, RGB red, green , blue , HSL hue , saturation, lightning  */
 
 /* HEX a to f 0- 255  total 6 values*/
-h1, h2, h3, h4, h5, h6, p, li, a{
-    /* color: #af345d;
-    background-color: #ac56cd; */
+/* h1, h2, h3, h4, h5, h6, p, li, a{
+    color: #af345d;
+    background-color: #ac56cd;
     font-family: "Playwrite RO", cursive;
-}
+} */
 
 /* RGB  0-255*/
-h1{
+/* h1{
     color: rgb(25, 55, 255);
     background-color: rgb(0, 36, 89);
 
-}
+} */
 
 /* HSL   0 to 360deg, 0 to 100%, 0 to 100%*/
-
+/* 
 h1{
     color: hsl(60deg, 60%, 80%);
     background-color: hsl(180deg, 34%, 12%);
@@ -116,5 +116,319 @@ ul{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
+} */
 /* Box model, css positions */
+
+/* width, height, padding, margin, border, border radius */
+/* h1{
+    border: 2px solid red;border: 10px groove red;
+    border-radius: 6px;
+    width: 36%;
+    height: 20vh;
+    padding: 20px;
+    margin: 50px auto;
+}
+a{
+    text-align: center;
+    display:  block;
+} */
+/* img{
+    width: 17%;
+    height: 30vh;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+} */
+
+/* input{
+    margin: 0 auto;
+    display: block;
+} */
+
+/* css positions static, sticky, fixed, absolute  and relative */
+/* 
+.heading{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: #56ac34;
+    width: 30%;
+    z-index: +3;
+}
+
+.div{
+    position: relative;
+}
+img{
+    width: 100%;
+    height: 100vh;
+}
+.image1, .image2, .image3, .image4{
+    position: absolute;
+    width: 20%;
+    height: 20vh;
+}
+.image1{
+    top: 0px;
+    left: 0px;
+}
+.image2{
+    top: 0px;
+    right: 0px;
+}
+.image3{
+    bottom: 0px;
+    left: 0px;
+}
+.image4{
+    bottom: 0px;
+    right: 0px;
+}
+.heading3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: red;
+} */
+
+
+
+/* Visibility  hidden  and display none */
+/* 
+.image{
+    visibility: hidden;
+    display: none;
+}
+.web{
+    visibility: hidden;
+    display: none;
+}
+
+@media(max-width : 767px){
+    .image{
+        visibility: hidden;
+        display: block;
+    }
+    .web{
+        visibility: visible;
+        display: none;
+    }
+    .flex{
+        flex-direction: column;
+    }
+} */
+
+
+/* Flex box one dimensional layout structure */
+
+/* .flex{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+} */
+
+/* Grid two dimensional layout structure */
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 20px;
+    row-gap: 40px;
+    gap: 30px 10px;
+
+}
+.grid li{
+    border: 2px solid red;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.grid-images{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+.grid-images img:nth-child(3){
+    grid-column: 3/5;
+    grid-row: 1/3;
+}
+
+.grid-images img:nth-child(5){
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.grid-images img:nth-child(8){
+    grid-column: 2/5;
+    grid-row: 3/5;
+}
+.grid-images img:nth-child(19){
+    grid-column: 3/5;
+}
+
+/* span{
+    color: red;
+    font-size: 20px;
+    border: 2px solid green;
+    width: 300px;
+    height: 300px;
+}  */
+
+
+/* Combinator, pseudo class, pseudo element selectors */
+
+/* Combinator :- Descendent combinator selector, child combinator, next sibling combinator, sub sequent sibling combinator selector. */
+
+/* Descendent combinator selector */
+/* div h2{
+     color: #546839;
+     background-color: aliceblue;
+} */
+
+/* child combinator selector > */
+/* section > h1{
+    color: #546839;
+    background-color: aliceblue;
+} */
+
+/* next sibling combinator selector */
+
+/* section + h1{
+    color: #546839;
+    background-color: aliceblue;
+} */
+
+/* sub sequent sibling combinator selector. */
+/* section ~ h1{
+    color: #546839;
+    background-color: aliceblue;
+} */
+
+/* Pseudo class selectors : hover, active, visited, focus, first child, last child, nth child, checked.....etc */
+
+/* h1{
+    color: #546839;
+    background-color: #ca45ac;
+    font-size: 30px;
+}
+h1:hover{
+    color: #ca45ac;
+    background-color: #546839;
+    font-size: 60px;
+} */
+/*  
+.web-childs{
+    display: none;
+}
+.web:hover .web-childs{
+    display: block;
+}
+
+input:focus{
+    background-color: #ca45ac;
+    outline: none;
+    border: 5px solid #546839;
+    height: 100px;
+}
+
+.check:checked{
+    width: 100px;
+    height: 100px;
+}
+
+.section h1{
+    color: #67cabd;
+}
+
+.section h1:first-child{
+    color: #ca45ac;
+}
+.section h1:last-child{
+    color: #ca45ac;
+}
+.section h1:nth-child(4),.section h1:nth-child(6) {
+    color: #ca45ac;
+}
+.section h1:nth-child(8){
+    background-color: aqua;
+} */
+
+/* Pseudo element :: after, before, marker, selection, first line , first letter */
+
+/* .section h1::after{
+    content: "\f030";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+} */
+
+/* .web-child li::marker{
+    list-style-type: none;
+    color: red;
+    font-size: 50px;
+} */
+/* .web-child li::before{
+    content: "\f030";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+} */
+ /* span{
+    font-size: 50px;
+    color: green;
+ } */
+  /* p::first-line{
+    font-size: 50px;
+    color: green;
+  } */
+
+/* ::selection{
+    background-color: aqua;
+    color: red;
+} */
+
+/* Attribute selectors */
+/* input{
+    height: 100px;
+    width: 300px;
+}
+.inputs input[type="date"]{
+    height: 50px;
+    width: 100px;
+}
+.grid-images img[alt="Chiars Image"]{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+} */
+
+.web-child{
+    transform: scale(0);
+    transition: all 3s ease-in-out;
+}
+.web:hover .web-child{
+    transform: scale(1);
+    transition: all 3s ease-in-out;
+}
+
+button{
+    padding: 10px 50px;
+    background: red;
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+    border: 5px solid green;
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px 2px #000;
+    margin: 50px auto;
+    display: block;
+    cursor: pointer;
+    transition: all 3s ease-in-out;
+}
+button:hover{
+    background-color: green;
+    color: #000;
+    border: 5px solid red;
+    transition: all 3s ease-in-out;
+}
