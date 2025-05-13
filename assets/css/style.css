@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Quicksand", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 36px;
+}
+h3{
+    font-size: 32px;
+}
+h4{
+    font-size: 28px;
+}
+h5{
+    font-size: 24px;
+}
+h6{
+    font-size: 20px;
+}
+.flex{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+/* Header section starts. */
+.header-section{
+    background-color: #314438;
+    justify-content: space-around;
+    color: #fff;
+    padding: 10px 0px;
+}
+.header-about{
+    position: relative;
+}
+.header-sub-links{
+    background-color: #fff;
+    padding: 10px;
+    width: 130px;
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+}
+.header-sub-links li{
+    padding: 3px 0px;
+}
+.header-sub-links li:hover{
+    border-bottom: 2px solid #8DC0D2;
+}
+.header-links a{
+    font-size: 12px;
+    color: #fff;
+}
+.header-sub-links a{
+    color: #000;
+}
+.header-about:hover .header-sub-links{
+    display: block;
+}
+.header-image{
+    height: 20px;
+    width: 100%;
+}
+.header-para{
+    font-size: 12px;
+}
+.header-para a{
+    color: #fff;
+    text-decoration: underline ;
+}
+.header-para a:hover{
+    color: #8DC0D2;
+}
+.header-logo-section{
+    background-color: #F3F0ED;
+    padding: 10px 30px;
+    justify-content: space-between;
+}
+.header-logo img{
+    height: 30px;
+    width: 100%;
+}
+.header-home-btn h6{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.header-home-btn h6:first-child{
+    color: #314438;
+}
+.header-home-btn h6:last-child{
+    color: #8DC0D2;
+}
+.header-home-btn button{
+    padding: 8px 16px;
+    background-color: #314438;
+    border-radius: 20px;
+    border: none;
+    position: relative;
+}
+.header-home-btn span{
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.header-design-btn{
+    padding: 5px 10px;
+    background-color: #314438;
+    border: 2px solid #314438;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.header-design-btn:hover{
+    background-color: transparent;
+    color: #000;
+}
+/* Header section ends. */

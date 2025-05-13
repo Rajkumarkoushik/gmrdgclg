@@ -10,20 +10,24 @@
     <link rel="shortcut icon" href="./assets/images/homepage-images/favicon.avif" type="image/x-icon">
     <!-- Font awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
+    <!-- Style sheet -->
+     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
 
    <!-- Header section starts -->
-      <header>
-         <section>
+      <header class="header-main">
+         <section class="header-section flex">
             <div>
+
+            </div>
+            <div class="header-para">
                <p>A workspace that has your back: get <a href="">Free Shipping</a> on all orders</p>
             </div>
-            <div>
-               <ul>
-                  <li class="links"><a href="">About</a>
-                     <ul class="sub-links">
+            <div class="flex">
+               <ul class="flex header-links">
+                  <li class="header-about"><a href="">About</a>
+                     <ul class="header-sub-links">
                         <li><a href="">Our Story</a></li>
                         <li><a href="">Reviews</a></li>
                         <li><a href="">Press & Media</a></li>
@@ -31,8 +35,8 @@
                         <li><a href="">Branch Blog</a></li>
                      </ul>
                   </li>
-                  <li><a href="">Support</a>
-                     <ul>
+                  <li class="header-about"><a href="">Support</a>
+                     <ul class="header-sub-links">
                         <li><a href="">Track My Order</a></li>
                         <li><a href="">FAQ</a></li>
                         <li><a href="">Ergonomics</a></li>
@@ -42,23 +46,23 @@
                      </ul>
                   </li>
                </ul>
-               <img src="./assets/images/homepage-images/ca-flag.avif" alt="Canada Flag">
+               <img class="header-image" src="./assets/images/homepage-images/ca-flag.avif" alt="Canada Flag">
             </div>
          </section>
-         <section>
-            <div>
+         <section class="header-logo-section flex">
+            <div class="flex header-home-btn">
                <h6>Home Office</h6>
                <button><Span></Span></button>
                <h6>Business</h6>
             </div>
-            <div>
+            <div class="header-logo">
                <a href="./index.html">
                   <img src="./assets/images/homepage-images/Branch_Normal.avif" alt="Branch Logo">
                </a>
             </div>
-            <div>
+            <div class="flex header-design">
                <i class="fa-solid fa-magnifying-glass"></i>
-               <button>Design My Office</button>
+               <button class="header-design-btn">Design My Office</button>
                <i class="fa-solid fa-cart-shopping"></i>
             </div>
          </section>
