@@ -1,0 +1,206 @@
+/* Laptop 1024 screen size*/
+@media(max-width: 1100px){
+    .header-empty-div{
+        display: none;
+    }
+    .header-section{
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .where-you-are-card-img img, .explore-products-cards img {
+        height: 50vh;
+    }
+    .office-furniture-cards{
+        flex-direction: column;
+    }
+    .office-furniture-cards img{
+        height: 100px;
+    }
+    .office-furniture-card{
+        gap: 5rem;
+    }
+    .our-best-seller-card{
+        display: none;
+    }
+
+}
+
+/* Tablet 768 screen size*/
+@media(max-width: 1023px){
+    .header-last-div, .header-home-btn, .header-design i:first-child, .header-design button, .our-best-seller-third {
+        display: none;
+    }
+    .header-section{
+        justify-content: center;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamburger i{
+        font-size: 25px;
+    }
+    .nav-links{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0px 20px;
+    }
+    .nav-main{
+        display: none;
+    }
+    .hero-division{
+        height: 65vh;
+    }
+    .hero-section-content {
+        top: 7%;
+        width: 50%;
+    }
+    .hero-section-content h1 {
+        font-size: 36px;
+    }
+    .where-you-are-card-img img{
+        height: 40vh;
+    }
+    .explore-products-cards{
+        flex-direction: column;
+        align-items: inherit;
+        padding: 0px 2rem;
+     }
+    .explore-products-cards img{
+        height: 80vh;
+    }
+    .we-sell-content{
+        flex-direction: column-reverse;
+    }
+    .we-sell-left-side, .we-sell-right-side, .shop-by-space-heading {
+        width: 86%;
+    }
+    .our-best-seller-cards img {
+        height: 300px;
+    }
+    .free-shipping-main, .shop-by-space-main {
+        padding: 5rem 2rem;
+    }
+    .testimonial-division, .testimonial-responsive{
+        flex-direction: column;
+    }
+    .testimonial-card{
+        border: none;
+        text-align: left;
+        display: flex;
+        gap: 20px;
+    }
+    .testimonial-card p{
+        padding-top: 10px;
+    }
+    .footer-division{
+        flex-wrap: wrap;
+    }
+    .footer-logo, .footer-mail {
+        width: 100%;
+    }
+    .footer-responsive{
+        width: 45%;
+    }
+}
+
+/* 0px to 767px */
+@media(max-width: 767px){
+    .header-para{
+        text-align: center;
+    }
+    .header-logo img{
+        height: 25px;
+    }
+    .hero-division {
+        height: 81vh;
+    }
+    .hero-section-content {
+        bottom: 0%;
+        width: 100%;
+        text-align: center;
+        left: 0px;
+        top: 35%;
+    }
+    .hero-section-content h1 {
+        font-size: 30px;
+    }
+    .press-sec-div{
+        width: 100%;
+    }
+    .press-sec-div h4{
+        font-size: 20px;
+    }
+    .press-sec-images{
+        justify-content: center;
+    }
+    .press-sec-images img {
+        height: 20px;
+    } 
+    .where-you-are-cards, .explore-products-cards, .office-furniture-cards, .we-sell-content{
+        flex-direction: column;
+    }  
+    .where-you-are-card-img img {
+        height: 65vh;
+    }
+    .where-you-are-cards{
+        padding: 0px 1rem;
+    }
+    .office-furniture-card {
+        gap: 1rem;
+        flex-direction: column;
+    }
+    .office-furniture-cards img {
+        height: 70px;
+    }
+    .office-furinture-responsive{
+        display: flex;
+        align-items: center;
+        gap: 20px
+    }
+    .we-sell-furniture span:first-child, .we-sell-branch span:first-child, .we-sell-branch span:nth-child(2){
+        width: 60px;
+    }
+    .we-sell-responsive{
+        gap: 15px;
+        padding: 0px 1rem;
+    }
+    .we-sell-branch h2, .our-best-seller-heading h2, .free-shipping-division h2{
+        font-size: 28px;
+    }
+    .we-sell-list li{
+        font-size: 12px;
+    }
+    .we-sell-list-responsive{
+        gap: 0px;
+    }
+    .our-best-seller-main, .footer-main {
+        padding: 3rem 1rem;
+    }
+    .our-best-btns{
+        display: flex;
+        gap: 5px;
+    }
+    .our-best-seller-second{
+        display: none;
+    }
+    .free-shipping-division{
+        flex-direction: column;
+    }
+    .shop-by-space-main-list{
+        justify-content: flex-start;
+        gap: 8px;
+    }
+    .shop-by-space-main-list li{
+        font-size: 12px;
+    }
+    .testimonial-main {
+        padding: 5rem 1rem;
+    }
+    .footer-responsive {
+        width: 40%;
+    }
+    .footer-privacy-policy{
+        flex-wrap: wrap;
+    }
+}

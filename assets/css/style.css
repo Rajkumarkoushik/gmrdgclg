@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -31,14 +32,21 @@ h5{
 h6{
     font-size: 20px;
 }
+h1,h2,h3,h4,h5,h6,p{
+     font-family: "Frank Ruhl Libre", serif;
+}
 .flex{
     display: flex;
     gap: 30px;
     align-items: center;
 }
+:root{
+    --primary-color : #314438; 
+    --secondary-color : #8DC0D2; 
+}
 /* Header section starts. */
 .header-section{
-    background-color: #314438;
+    background-color: var(--primary-color);
     justify-content: space-around;
     color: #fff;
     padding: 10px 0px;
@@ -54,12 +62,13 @@ h6{
     position: absolute;
     top: 20px;
     left: 0px;
+    z-index: 1;
 }
 .header-sub-links li{
     padding: 3px 0px;
 }
 .header-sub-links li:hover{
-    border-bottom: 2px solid #8DC0D2;
+    border-bottom: 2px solid var(--secondary-color);
 }
 .header-links a{
     font-size: 12px;
@@ -83,7 +92,7 @@ h6{
     text-decoration: underline ;
 }
 .header-para a:hover{
-    color: #8DC0D2;
+    color: var(--secondary-color);
 }
 .header-logo-section{
     background-color: #F3F0ED;
@@ -99,14 +108,14 @@ h6{
     text-transform: uppercase;
 }
 .header-home-btn h6:first-child{
-    color: #314438;
+    color: var(--primary-color);
 }
 .header-home-btn h6:last-child{
-    color: #8DC0D2;
+    color: var(--secondary-color);
 }
 .header-home-btn button{
     padding: 8px 16px;
-    background-color: #314438;
+    background-color: var(--primary-color);
     border-radius: 20px;
     border: none;
     position: relative;
@@ -128,8 +137,8 @@ h6{
 }
 .header-design-btn{
     padding: 5px 10px;
-    background-color: #314438;
-    border: 2px solid #314438;
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
     color: #fff;
     font-size: 13px;
     font-weight: 600;
@@ -140,13 +149,21 @@ h6{
     background-color: transparent;
     color: #000;
 }
+.header-second-section{
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+}
+.hamburger{
+    display: none;
+}
 /* Header section ends. */
 
 /* Nav section starts. */
 .nav-main{
     background-color: #fff;
-    position: relative;
-    padding: 15px 0px;
+    padding: 1.2rem 0px;
+        position: relative;
 }
 .nav-shop-links{
     background-color: #fff;
@@ -174,7 +191,7 @@ h6{
 }
 .nav-shop-img::before{
     content: "";
-    background-color: #8DC0D2;
+    background-color: var(--secondary-color);
     width: 3px;
     height: 100%;
     position: absolute;
@@ -191,15 +208,15 @@ h6{
     padding-bottom: 30px;
 }
 .nav-shop-sublinks a:hover{
-    color: #8DC0D2;
+    color: var(--secondary-color);
     text-decoration: underline;
-    text-decoration-color: #8DC0D2;
+    text-decoration-color: var(--secondary-color);
 }
 .nav-links{
     justify-content: center;
 }
 .nav-links a{
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
     color: #000;
     text-transform: uppercase;
@@ -229,21 +246,410 @@ h6{
 /* Nav section ends. */
 
 /* Hero section starts */
-.hero-video {
+.hero-division{
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
 }
-.hero-video video {
+.hero-division video{
+    min-height: 100vh;
+    min-width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
-    min-width: 100%;
-    min-height: 100%;
     transform: translate(-50%, -50%);
     object-fit: cover;
     z-index: -1;
 }
+.hero-section-content{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    color: #fff;
+    width: 35%;
+}
+.hero-section-content h1{
+    padding-bottom: 20px;
+    font-size: 45px
+}
+.hero-section-content button{
+    background-color: #fff;
+    color: var(--primary-color);
+    padding: 1rem 5rem;
+    border: 2px solid #fff;
+    margin: 10px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.hero-section-content button:hover{
+    background-color: transparent;
+}
+.hero-section-content a{
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+.hero-section-content a:hover{
+    color: var(--secondary-color);
+}
 /* Hero section ends */
+
+/* Press section starts. */
+.press-sec-main{
+    background-color: var(--primary-color);
+    padding: 1.5rem 0px;
+    text-align: center;
+    color: #fff;
+}
+.press-sec-div{
+    width: 70%;
+    margin: 0 auto;
+}
+.press-sec-images{
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+}
+.press-sec-images img{
+    height: 30px;
+}
+/* Press section ends. */
+
+/* where-you-are-main section starts. */
+.where-you-are-main h2{
+    text-align: center;
+    padding: 2rem 0px;
+}
+.where-you-are-main{
+    padding: 3rem 0px;
+}
+.where-you-are-cards, .explore-products-cards, .office-furniture-cards, .we-sell-content{
+    justify-content: center;
+}
+.where-you-are-card-img img, .explore-products-cards img{
+    width: 100%;
+    height: 60vh;
+    transition: all 0.5s ease-in-out;
+}
+.where-you-are-card-img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.where-you-are-card-img img:hover{
+    transform: scale(1.03);
+    transition: all 0.6s ease-in-out;
+}
+.where-you-are-cards h3{
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.where-you-are-cards h3::after, .explore-products-content a::after{
+    content: "\3e";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    font-size: 12px;
+    color: #fff;
+    background-color: var(--secondary-color);
+    padding: 5px 8px;
+    border-radius: 50%;
+}
+/* where-you-are-main section ends. */
+
+/* Explore our products section starts. */
+.explore-products-content{
+    text-align: center;
+}
+.explore-products-content a{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    font-weight: 900;
+}
+.explore-products-btn{
+    display: block;
+    margin: 3rem auto;
+    color: #fff;
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    border: 2px solid var(--primary-color);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.explore-products-btn:hover{
+    color: var(--primary-color);
+    background-color: #fff;
+}
+
+/* Explore our products section ends. */
+
+/* Office furniture section starts. */
+.office-furniture-main{
+    background-color: #F3F0ED;
+    padding: 3rem 0px;
+}
+.office-furniture-content{
+    text-align: center;
+    padding: 1rem 0px;
+}
+.office-furniture-cards img{
+    width: auto;
+    height: 70px;
+}
+.office-furniture-cards h6{
+    font-size: 14px;
+    text-align: center;
+}
+.office-furniture-cards{
+    padding-top: 2rem;
+}
+.office-furniture-second{
+    background-color: #fff;
+    padding: 3rem;
+    position: relative;
+}
+.office-furniture-second::after{
+    content: "FOR TEAM OFFICES";
+    position: absolute;
+    top: -10px;
+    left: 40%;
+    background-color: var(--secondary-color);
+    padding: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    transform: rotate(-5deg);
+}
+/* Office furniture section ends. */
+
+/* We sell section starts. */
+.we-sell-main{
+    padding: 3rem 0px;
+}
+.we-sell-left-side, .we-sell-right-side{
+    width: 40%;
+}
+.we-sell-content{
+    gap: 3rem;
+}
+.we-sell-list{
+    width: 40%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    color: #9b9898;
+}
+.we-sell-furniture span:first-child{
+    background-color: #AEB6B0;
+    width: 100px;
+    height: 400px;
+    display: block;
+}
+.we-sell-branch span:first-child{
+    width: 100px;
+    height: 200px;
+    display: block;
+    background-color: transparent;
+    border: 2px dashed #AEB6B0;
+    border-bottom: none;
+    position: relative;
+}
+.we-sell-branch span:first-child::after{
+    content: "Save up to 50%";
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    color: #AEB6B0;
+}
+.we-sell-branch span:nth-child(2){
+    width: 100px;
+    height: 200px;
+    display: block;
+    background-color: var(--primary-color);
+}
+.we-sell-left-side, .shop-by-space-heading{
+    text-align: center;
+}
+
+/* We sell section ends. */
+
+/* our-best-seller-main section starts. */
+.our-best-seller-main{
+    background-color: #F3F0ED;
+    padding: 3rem 5rem;
+}
+.our-best-seller-heading{
+    justify-content: space-between;
+    padding: 2rem 0px;
+}
+.our-best-seller-heading span{
+    border: 1px solid #000;
+    background-color: transparent;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+.our-best-seller-cards{
+   justify-content: space-between;
+}
+.our-best-seller-cards img{
+    width: 100%;
+    height: 250px;
+}
+.our-best-seller-card-content{
+    background-color: #fff;
+    padding: 10px;
+}
+.our-best-seller-card-content h6{
+    font-size: 14px;
+}
+.our-best-seller-card-content p{
+    font-size: 12px;
+    padding: 5px 0px;
+}
+.our-best-seller-cards div{
+    transition: all 0.3s ease-in-out;
+}
+.our-best-seller-cards div:hover{
+    transform: scale(1.01);
+}
+/* our-best-seller-main section ends. */
+
+/* free-shipping-main section starts. */
+.free-shipping-main{
+    background-color: #9c432e;
+    padding: 5rem 7rem;
+    color: #fff;
+}
+.free-shipping-main a{
+    color: #fff;
+    text-decoration: underline;
+}
+/* free-shipping-main section ends. */
+
+/* shop-by-space-main section starts. */
+.shop-by-space-main{
+    background-color: #F3F0ED;
+    padding: 5rem 7rem;
+}
+.shop-by-space-heading{
+    width: 60%;
+    margin: 0 auto;
+    padding: 2rem 0px;
+}
+.shop-by-space-main-list{
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.shop-by-space-main-list li{
+    font-size: 18px;
+    font-weight: 600;
+    color: #9b9898;
+}
+.shop-by-space-main-list::after{
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: #9b9898;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.shop-by-space-img img{
+    width: 100%;
+    height: auto;
+}
+.shop-by-space-img img:nth-child(2),.shop-by-space-img img:nth-child(3),.shop-by-space-img img:last-child{
+    display: none;
+}
+/* shop-by-space-main section ends. */
+
+/* Testimonial section starts. */
+.testimonial-main{
+    padding: 5rem 7rem;
+}
+.testimonial-main p{
+    padding-top: 2rem;
+}
+.testimonial-division{
+    justify-content: center;
+    align-items: center;
+}
+.testimonial-card{
+    border: 1px solid #9b9898;
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 2rem
+}
+.testimonial-card img{
+    height: 50px;
+}
+/* Testimonial section ends. */
+
+/* Footer section starts. */
+.footer-main{
+    background-color: var(--primary-color);
+    padding: 3rem 5rem;
+}
+.footer-logo img{
+    height: 30px;
+}
+.footer-division{
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 2rem;
+}
+.footer-logo{
+    width: 20%;
+}
+.footer-logo p{
+    color: #76827A;
+    padding: 10px 0px;
+}
+.footer-logo i{
+    background-color: #fff;
+    padding: 11px 13px;
+    border-radius: 50%;
+}
+.footer-logo i:hover{
+    background-color: var(--secondary-color);
+}
+.footer-main h6{
+    color: #76827A;
+    padding-bottom: 20px;
+}
+.footer-main a{
+    color: #fff;
+    padding: 3px 0px;
+    font-size: 13px;
+}
+.footer-main a:hover{
+    text-decoration: underline;
+}
+.footer-main input{
+    padding-left: 10px;
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border: none;
+    background-color: #76827A;
+    color: #fff;
+}
+.footer-privacy-policy{
+    justify-content: center;
+}
+/* Footer section ends. */
 
